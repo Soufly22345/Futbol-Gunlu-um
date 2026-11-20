@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol Günlüğüm</title>
+    <style type="text/css">
+        body{
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .ustbolum{
+            background-color: #161616;
+            padding: 20px;
+            border-bottom: 2px solid #00e676;
+            text-align: center;
+        }
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            color: #00e676;
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+        }
+        .menu a{
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .menu a:hover{
+            color: #00e676;
+        }
+        .giriskutusu{
+            background-color: #121212;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 1px solid #262626;
+        }
+        .giriskutusu h1{
+            color: #ffffff;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        .giriskutusu p{
+            color: #a0a0a0;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .bolum{
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .bolum h2{
+            color: #00e676;
+            border-left: 4px solid #00e676;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        .kartkapsayici{
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .kart{
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+            border: 1px solid #2a2a2a;
+        }
+        .kart .baslik{
+            color: #888888;
+            font-size: 14px;
+            margin: 0 0 8px 0;
+        }
+        .kart .değer{
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .listekutusu{
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #2a2a2a;
+        }
+        .listekutusu p{
+            border-bottom: 1px solid #2a2a2a;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .listekutusu p:last-child{
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .listekutusu strong{
+            color: #00e676;
+        }
+        .notkutusu{
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #2a2a2a;
+        }
+        .notkutusu .tarih{
+            color: #00e676;
+            font-weight: bold;
+            margin-top: 0;
+        }
+        .footer{
+            background-color: #161616;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            color: #666666;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ustbolum">
+        <p class="logo">Futbol Günlüğüm</p>
+        <div class="menu">
+            <a href="#hakkimda">Ben Kimim</a>
+            <a href="#antreman">İdman Programı</a>
+            <a href="#maclar">Maç Notlarım</a>
+        </div>
+    </div>
+    <div class="giriskutusu">
+        <h1>Düdük Çalar,Oyun Başlar</h1>
+        <p>Burası benim kişisel futbol sığınağım. Haftalık idman programlarımı, maç sonrası analizlerimi ve saha içi hedeflerimi burada tutuyorum.</p>
+    </div>
+    <div id="hakkimda" class="bolum">
+        <h2>Oyuncu Kartı</h2>
+        <div class="kartkapsayici">
+            <div class="kart">
+            <p class="baslik">Mevki</p>
+            <p class="değer">Forvet / Orta Saha</p>
+        </div>
+        <div class="kart">
+            <p class="baslik">Güçlü Ayak</p>
+            <p class="değer">Sağ Ayak</p>
+        </div>
+        <div class="kart">
+            <p class="baslik">Oyun Tarzı</p>
+            <p class="değer">Hızlı Hücum ve Pres</p>
+        </div>
+      </div>
+    </div>
+    <div class="bolum" id="antreman">
+        <h2>Haftalık İdman</h2>
+        <div class="listekutusu">
+            <p><strong>Pazartesi:</strong> 30 dakika tempolu koşu ve top sürme (slalom) çalışması.</p>
+            <p><strong>Çarşamba:</strong> Duvar pası ve zayıf ayak şut isabeti antrenmanı.</p>
+            <p><strong>Cuma:</strong> Çabukluk merdiveni ve dar alanda top kontrolü.</p>
+            <p><strong>Cumartesi:</strong> Maç günü ve esneme hareketleri.</p>
+        </div>
+    </div>
+    <div class="bolum" id="maclar">
+        <h2>Son Maç Notlarım</h2>
+        <div class="notkutusu">
+            <p class="tarih">15 Kasım - Akşam Maçı</p>
+            <p>İlk yarıda çok fazla top kaybı yaptım ama ikinci yarıda pas hızımı artırınca oyunun kontrolünü aldık. Ceza sahası dışından şut denemelerimi artırmam gerekiyor.</p>
+        </div>
+        <div class="notkutusu">
+            <p class="tarih">8 Kasım - Hazırlık Maçı</p>
+            <p>Defans arkasına atılan toplarda zamanlamam iyiydi. Kondisyon olarak son 15 dakikada biraz düştüm, hafta içi koşuları artırmalıyım.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Futbol Günlüğüm - 2026</p>
+    </div>
+</body>
+</html>
